@@ -1,0 +1,21 @@
+export PG_HOST="127.0.0.1"
+export PG_PORT="5432"
+export PG_SUPERUSER="postgres" # user with super permissions
+export PG_DATABASE="postgres"
+export PGPASSWORD="" # super user password, blank for no password, usualy when local
+
+# new database and role config
+export NEW_USERNAME="sqsdemo"
+export NEW_USER_PASSWORD="sqsdemo"
+export DB_NAME="sqsdemo"
+
+export DATABASE_URL=postgres://$NEW_USERNAME:$NEW_USER_PASSWORD@$PG_HOST:$PG_PORT/$DB_NAME?sslmode=disable
+
+# AWS
+export SQS_QUEUE_URL=https://sqs.ap-southeast-2.amazonaws.com/AWS_AC_NUM/QUEUE_NAME
+
+export AWS_REGION=ap-southeast-2
+
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_SESSION_TOKEN=""
